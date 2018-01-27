@@ -1,0 +1,15 @@
+{
+  "name": "mobx-app",
+  "version": "1.0.0",
+  "description": "mobx state react",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mobx",
+    "react"
+  ],
+  "author": "luzuoquan",
+  "license": "MIT"
+}
