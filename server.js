@@ -10,6 +10,11 @@ const compiler = Webpack(devWebpackConf)
 
 const webpackMiddleware = koaWebpack({
 	compiler: compiler,
+	hot: {
+		hot: true,
+		reload: true,
+		port: 3002
+	},
 	dev: {
 		hot: true,
 		noInfo: true,

@@ -1,19 +1,12 @@
 import * as React from 'react'
 import * as ReactDOM from 'react-dom'
+import App from './containers'
 
-class App extends React.Component {
-  render() {
-    return (
-      <h1>Hello React</h1>
-    )
-  }
-}
-
-const render = Component: any => {
+const render = (Component: any) => {
 	ReactDOM.render(
 		<Component />,
 		document.querySelector('#app')
-	)	
+	)
 }
 render(App)
 

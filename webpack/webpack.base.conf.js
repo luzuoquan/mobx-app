@@ -19,12 +19,8 @@ module.exports = {
   },
   module: {
     rules: [{
-      test: /\.tsx|\.js?$/,
+      test: /\.tsx|\.ts?$/,
       loader: "ts-loader"
     }]
-  },
-  externals: {
-    "react": "React",
-    "react-dom": "ReactDOM"
   }
 }
