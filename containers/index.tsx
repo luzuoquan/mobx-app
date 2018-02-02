@@ -13,13 +13,12 @@ export default class Home extends React.Component<HomeProp> {
   componentDidMount() {
     const { store } = this.props
     store.homeStore.fetchUsers()
-    console.info(store.homeStore.fetchUsers)
+    console.info(this)
   }
   render() {
-    // const userList = this.props
-    // console.info(this.props)
+    const { store } = this.props
     return (
-      <h1>Hello React TypeScript</h1>
+      <h1>{store.homeStore.userList.length}Hello React TypeScript</h1>
     )
   }
 }
