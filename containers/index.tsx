@@ -4,21 +4,24 @@ import DevTools from 'mobx-react-devtools'
 import { observer, inject } from 'mobx-react'
 
 export interface HomeProp {
-  store: any
+  homeStore: any
 }
 
-@inject('store')
+@inject('homeStore')
 @observer
 export default class Home extends React.Component<HomeProp> {
+  componentWillReact() {
+    console.warn(`开始更新`)
+  }
   componentDidMount() {
-    const { store } = this.props
-    store.homeStore.fetchUsers()
+    const { homeStore } = this.props
+    homeStore.fetchUsers()
   }
   render() {
-    const { store } = this.props
+    const { homeStore } = this.props
     return (
       <div>
-        <h1>{store.homeStore.userList.length}Hello React TypeScript</h1>
+        <h1>{homeStore.userList.length}Hello React TypeScript</h1>
         <DevTools />
       </div>
     )
