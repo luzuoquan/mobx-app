@@ -7,6 +7,6 @@ Mobx 也是组件状态管理的另外一种方案，与 Redux 和 Flux 的范�
 Koa
 
 ### Typescript
-Typescript（忽略.babelrc文件）
+Typescript
 
 
